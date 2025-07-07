@@ -1,0 +1,50 @@
+body {
+  background-color: #f4f4f4;
+  font-family: sans-serif;
+}
+
+.admin-container {
+  width: 100%;
+  max-width: 800px;
+  min-width: 500px;
+  margin: auto;
+
+  /* 중앙 정렬을 위한 flex 컨테이너 부모 기준 필요 (Layout/main-content 쪽에서 정렬) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+
+  /* 높이 제한 */
+  max-height: 120vh;
+  min-height: 40vh;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+header, footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

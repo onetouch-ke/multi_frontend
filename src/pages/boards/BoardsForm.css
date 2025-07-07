@@ -1,0 +1,55 @@
+.board-form-container {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+
+  max-height: 90vh;
+  min-height: 40vh;
+  height: auto;
+}
+
+.board-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.board-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-form-container label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.board-form-container input{
+  width: 100%;              /* 모든 요소 가로폭 동일 */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.board-form-container textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #666;
+  width: 100%;
+  height: 200px;
+  min-height: 80%;
+  box-sizing: border-box;
+  resize: none
+}
+
