@@ -11,7 +11,7 @@ function Register() {
     email: ''
   });
 
-  const navigate = useNavigate(); // ✅ 네비게이터 훅 사용
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
