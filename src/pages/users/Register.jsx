@@ -11,7 +11,7 @@ function Register() {
     email: ''
   });
 
-  const navigate = useNavigate(); // ✅ 네비게이터 훅 사용
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +25,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const res = await fetch('/users/register', {
+      const res = await fetch('/api/users/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
