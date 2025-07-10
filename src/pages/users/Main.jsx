@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Main.css';
 import Layout from './Layout';
 import logo from '../../logo.png'; // 이미지 import
@@ -15,6 +14,11 @@ function Main() {
         <img src={logo} alt="Logo" className="logo-image" />
         <p>사용자 ID: {user?.userId}</p>
         <p>이메일: {user?.email}</p>
+        <Link to='/boards'>
+          <button>
+          게시글 페이지
+          </button>
+        </Link>
       </div>
     </Layout>
   );
