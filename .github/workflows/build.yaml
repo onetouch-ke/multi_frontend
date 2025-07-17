@@ -33,7 +33,7 @@ jobs:
         TAG: ${{ github.run_number }}
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
       run: |
-        IMAGE=$ECR_REGISTRY/multi-frontend:${TAG}
+        IMAGE=$ECR_REGISTRY/multi_frontend:${TAG}
         docker build -t $IMAGE -f Dockerfile .
         docker push $IMAGE
     
