@@ -13,4 +13,3 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # nginx 실행 명령 추가
 CMD ["nginx", "-g", "daemon off;"]
-
