@@ -39,4 +39,4 @@ jobs:
     
     - name: Trigger Jenkins to update values.yaml
       run: |
-        curl -X POST "http://3.38.162.129:8080/generic-webhook-trigger/invoke?token=gha-trigger-token"
+        curl -X POST "http://43.201.69.68:8080/generic-webhook-trigger/invoke?token=gha-trigger-token"
